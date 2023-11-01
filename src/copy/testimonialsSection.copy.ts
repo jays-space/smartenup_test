@@ -1,0 +1,1 @@
+export const TESTIMONIALS_SECTION_COPY = {};

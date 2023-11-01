@@ -1,17 +1,28 @@
 import "./App.css";
 
+// COMPONENTS
+import {
+  Navbar,
+  BannerSection,
+  CTASection,
+  FiltersSection,
+  Footer,
+  GameCarouselSection,
+  TestimonialsCarouselSection,
+} from "@/components/templates";
+
 function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold underline">Vite + React</h1>
-      <div>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Navbar />
+      <main>
+        <BannerSection />
+        <GameCarouselSection />
+        <CTASection />
+        <FiltersSection />
+        <TestimonialsCarouselSection />
+      </main>
+      <Footer />
     </>
   );
 }

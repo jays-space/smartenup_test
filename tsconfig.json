@@ -21,6 +21,9 @@
     "noFallthroughCasesInSwitch": true,
 
     "types": ["node"],
+    "esModuleInterop": true,
+
+    /* Aliases */
     "baseUrl": ".",
     "paths": {
       "@*": ["./src/*"]

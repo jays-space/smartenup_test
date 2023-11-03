@@ -1,6 +1,7 @@
 import "@testing-library/jest-dom";
 import { render, screen } from "@testing-library/react";
 import { Heading } from ".";
+import { getHeadingStyles } from "./Heading.utils";
 
 describe("<Heading />", () => {
   test(`it renders the h1 element if variant prop is not passed`, () => {
@@ -36,12 +37,21 @@ describe("<Heading />", () => {
         </Heading>
       );
 
+      // Use the screen utility to locate and retrieve the rendered h{i} element with the specified content
       const headingComponent = screen.getByRole("heading", {
         level: i,
         name: content,
-      }); // Use the screen utility to locate and retrieve the rendered h{i} element with the specified content
+      });
 
-      expect(headingComponent).toBeInTheDocument(); // Assert that the headingComponent is present in the document
+      // Assert that the headingComponent is present in the document
+      expect(headingComponent).toBeInTheDocument();
+
+      // Assert that the headingComponent has the relevant heading element styles
+      expect(headingComponent).toHaveClass(
+        getHeadingStyles(
+          `h${i}` as "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | undefined
+        )
+      );
     });
-  } 
+  }
 });

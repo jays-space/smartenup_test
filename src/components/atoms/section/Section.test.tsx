@@ -19,6 +19,9 @@ describe("<Section />", () => {
     // Assert that the section component is present in the DOM.
     expect(sectionComponent).toBeInTheDocument();
 
+    // Assert that the section component has the correct background color.
+    expect(sectionComponent).toHaveClass("bg-violet-950");
+
     // Assert that the content is present within the section component.
     expect(sectionContent).toBeInTheDocument();
   });

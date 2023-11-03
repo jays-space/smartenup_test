@@ -2,7 +2,7 @@ import "./App.css";
 
 // COMPONENTS
 import {
-  Navbar,
+  // Navbar,
   BannerSection,
   CTASection,
   FiltersSection,
@@ -14,7 +14,7 @@ import {
 function App() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <main>
         <BannerSection />
         <GameCarouselSection />

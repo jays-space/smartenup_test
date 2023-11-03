@@ -1,5 +1,6 @@
 // TYPES
 import { IHeading } from "./Heading.types";
+import { getHeadingStyles } from "./Heading.utils";
 
 /**
  * The `Heading` component is used to render different heading levels (h1, h2, h3, h4, h5, h6).
@@ -11,33 +12,35 @@ import { IHeading } from "./Heading.types";
  */
 
 const Heading = ({ children, variant = undefined }: IHeading): JSX.Element => {
+  // Determine the appropriate heading element based on the provided 'variant' prop.
   switch (variant) {
     case "h1": {
-      return <h1>{children}</h1>;
+      return <h1 className={`${getHeadingStyles(variant)}`}>{children}</h1>;
     }
 
     case "h2": {
-      return <h2>{children}</h2>;
+      return <h2 className={`${getHeadingStyles(variant)}`}>{children}</h2>;
     }
 
     case "h3": {
-      return <h3>{children}</h3>;
+      return <h3 className={`${getHeadingStyles(variant)}`}>{children}</h3>;
     }
 
     case "h4": {
-      return <h4>{children}</h4>;
+      return <h4 className={`${getHeadingStyles(variant)}`}>{children}</h4>;
     }
 
     case "h5": {
-      return <h5>{children}</h5>;
+      return <h5 className={`${getHeadingStyles(variant)}`}>{children}</h5>;
     }
 
     case "h6": {
-      return <h6>{children}</h6>;
+      return <h6 className={`${getHeadingStyles(variant)}`}>{children}</h6>;
     }
 
+    // Default case: If 'variant' is not provided or invalid, it defaults to "h1".
     default:
-      return <h1>{children}</h1>;
+      return <h1 className={`${getHeadingStyles(variant)}`}>{children}</h1>;
   }
 };
 

@@ -1,6 +1,9 @@
 // TYPES
 import { IButton } from "./Button.types";
 
+// COMPONENTS
+import { Text } from "../../atoms/typography/text";
+
 // UTILS
 import { getButtonStyles } from "./Button.utils";
 
@@ -22,7 +25,13 @@ const Button = ({
   // Render the button element with the specified properties and CSS class
   return (
     <button onClick={onClick} className={`${getButtonStyles(variant)}`}>
-      {label}
+      {variant === "secondary" ? (
+        <span data-testid={`secondaryButtonContentBackground`} className={`text-content-background bg-background m-[1px] px-12 py-4 cursor-pointer`}>
+          <Text interactive>{label}</Text>
+        </span>
+      ) : (
+        <Text interactive>{label}</Text>
+      )}
     </button>
   );
 };

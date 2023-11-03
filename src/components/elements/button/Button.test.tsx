@@ -18,8 +18,8 @@ describe("<Button />", () => {
 
     // Assert that the button component is in the document
     expect(buttonComponent).toBeInTheDocument();
-    // Assert that the button component has the "primaryButton" class
-    expect(buttonComponent).toHaveClass("primaryButton");
+    // Assert that the button component has the "primary-button" class
+    expect(buttonComponent).toHaveClass("primary-button-styles");
   });
 
   // Test case: It renders a button element with secondary button styles when the variant prop === secondary
@@ -33,29 +33,16 @@ describe("<Button />", () => {
     const buttonComponent = screen.getByRole("button", {
       name: label,
     });
+    
+    // Find the button content background
+    const buttonContentBackground = screen.getByTestId(`secondaryButtonContentBackground`)
 
     // Assert that the button component is in the document
     expect(buttonComponent).toBeInTheDocument();
-    // Assert that the button component has the "secondaryButton" class
-    expect(buttonComponent).toHaveClass("secondaryButton");
-  });
-
-  // Test case: It renders a button element with default button styles when the variant prop is === default
-  test(`it renders a button element with default button styles when the variant prop is === default`, () => {
-    const label = `default button`;
-
-    // Render the Button component with the "default" variant and a label
-    render(<Button variant="default" label={label} />);
-
-    // Find the button element by its accessible role and label
-    const buttonComponent = screen.getByRole("button", {
-      name: label,
-    });
-
-    // Assert that the button component is in the document
-    expect(buttonComponent).toBeInTheDocument();
-    // Assert that the button component has the "defaultButton" class
-    expect(buttonComponent).toHaveClass("defaultButton");
+    // Assert that the button component has the "secondary-button" class
+    expect(buttonComponent).toHaveClass("secondary-button-styles");
+    // Assert that the button component has the "text-content-background" class
+    expect(buttonContentBackground).toHaveClass("text-content-background");
   });
 
   // Test case: It renders a button element with default button styles when the variant prop is undefined
@@ -73,7 +60,7 @@ describe("<Button />", () => {
     // Assert that the button component is in the document
     expect(buttonComponent).toBeInTheDocument();
     // Assert that the button component has the "defaultButton" class
-    expect(buttonComponent).toHaveClass("defaultButton");
+    expect(buttonComponent).toHaveClass("default-button-styles");
   });
 
   // Test case: It runs the function passed in the onClick prop
@@ -91,8 +78,6 @@ describe("<Button />", () => {
 
     // Assert that the button component is in the document
     expect(buttonComponent).toBeInTheDocument();
-    // Assert that the button component has the "defaultButton" class
-    expect(buttonComponent).toHaveClass("defaultButton");
 
     // Simulate a click on the button using user-event
     act(() => {

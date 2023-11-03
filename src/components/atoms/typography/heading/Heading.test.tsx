@@ -1,7 +1,7 @@
 import "@testing-library/jest-dom";
 import { render, screen } from "@testing-library/react";
 import { Heading } from ".";
-import { getHeadingStyles } from "./Heading.utils";
+import { HeadingVariantTypes } from "./Heading.types";
 
 describe("<Heading />", () => {
   test(`it renders the h1 element if variant prop is not passed`, () => {
@@ -23,6 +23,27 @@ describe("<Heading />", () => {
     // Loop through different heading variants (h1 to h6) to test rendering of each variant
 
     const content = `This is a h${i}`; // Define content for the current heading variant being tested
+    const expectedHeadingStyles = (
+      variant: HeadingVariantTypes | undefined
+    ) => {
+      switch (variant) {
+        case "h1":
+          return `h1-styles`;
+        case "h2":
+          return `h2-styles`;
+        case "h3":
+          return `h3-styles`;
+        case "h4":
+          return `h4-styles`;
+        case "h5":
+          return `h5-styles`;
+        case "h6":
+          return `h6-styles`;
+
+        default:
+          return `h1-styles`;
+      }
+    };
 
     test(`it renders the h${i} element if variant prop is h${i}`, () => {
       // Test case description: Ensure that the Heading component renders the specified h{i} element when the "variant" prop is set to "h{i}".
@@ -48,7 +69,7 @@ describe("<Heading />", () => {
 
       // Assert that the headingComponent has the relevant heading element styles
       expect(headingComponent).toHaveClass(
-        getHeadingStyles(
+        expectedHeadingStyles(
           `h${i}` as "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | undefined
         )
       );

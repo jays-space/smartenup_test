@@ -1,4 +1,4 @@
-export type ButtonVariantType = "default" | "primary" | "secondary";
+export type ButtonVariantType = "primary" | "secondary";
 export interface IButton {
   label: string;
   variant?: ButtonVariantType;

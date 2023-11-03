@@ -14,7 +14,7 @@ import { IText } from "./Text.types";
  */
 
 const Text = ({ children }: IText): JSX.Element => {
-  return <p>{children}</p>;
+  return <p className={`text-body text-lg font-body font-normal leading-[34.64px] tracking-wide`}>{children}</p>;
 };
 
 export default Text;

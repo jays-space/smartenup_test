@@ -12,7 +12,7 @@ import { ISection } from "./Section.types";
  */
 const Section = ({ children, title, className = "" }: ISection) => {
   return (
-    <section data-testid={title} className={`${className} relative bg-violet-950 w-full min-h-screen px-52 py-20 overflow-x-hidden`}>
+    <section data-testid={title} className={`${className} relative bg-background w-full min-h-screen px-40 py-20 overflow-x-hidden`}>
       {children}
     </section>
   );

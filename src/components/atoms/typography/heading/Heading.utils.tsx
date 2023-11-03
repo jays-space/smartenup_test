@@ -9,7 +9,7 @@ import { HeadingVariantTypes } from "./Heading.types";
  */
 export const getHeadingStyles = (variant: HeadingVariantTypes | undefined) => {
   // Common styles shared by all heading variants.
-  const commonStyles = `text-white font-heading font-extrabold uppercase`;
+  const commonStyles = `text-body font-heading font-extrabold uppercase`;
 
   switch (variant) {
     case "h1":

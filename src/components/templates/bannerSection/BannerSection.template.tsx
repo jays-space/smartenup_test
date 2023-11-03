@@ -1,6 +1,6 @@
 // COMPONENTS
 import { Heading, Section, Text } from "@/components/atoms";
-import { Button } from "@/components/elements";
+import { Button, Statistic } from "@/components/elements";
 
 // COPY
 import { BANNER_SECTION_COPY } from "@/copy";
@@ -36,30 +36,16 @@ const BannerSection = () => {
         </div>
 
         <div className="justify-start items-start gap-[31px] inline-flex">
-          <div className="flex-col justify-start items-center gap-[5px] inline-flex">
-            <div className="text-white text-3xl font-extrabold font-['Ondo'] uppercase leading-[33.18px] tracking-wide">
-              300+
-            </div>
-            <div className="text-white text-lg font-normal font-['Lato'] capitalize leading-[34.64px] tracking-wide">
-              Unique style
-            </div>
-          </div>
-          <div className="flex-col justify-start items-center gap-[5px] inline-flex">
-            <div className="text-violet-600 text-3xl font-extrabold font-['Ondo'] uppercase leading-[33.18px] tracking-wide">
-              200+
-            </div>
-            <div className="text-white text-lg font-normal font-['Lato'] capitalize leading-[34.64px] tracking-wide">
-              Project finished
-            </div>
-          </div>
-          <div className="flex-col justify-start items-center gap-[5px] inline-flex">
-            <div className="text-white text-3xl font-extrabold font-['Ondo'] uppercase leading-[33.18px] tracking-wide">
-              500+
-            </div>
-            <div className="text-white text-lg font-normal font-['Lato'] capitalize leading-[34.64px] tracking-wide">
-              Happy customer
-            </div>
-          </div>
+          {BANNER_SECTION_COPY.statistics.map(({ text, value }, index) => {
+            return (
+              <Statistic
+                key={index}
+                text={text}
+                value={value}
+                color={index === 1}
+              />
+            );
+          })}
         </div>
       </div>
     </Section>

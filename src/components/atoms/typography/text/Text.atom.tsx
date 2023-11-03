@@ -6,12 +6,11 @@ import { getTextStyles } from "./Text.utils";
 
 /**
  * Text Component
+ * This component is used to render text content with optional interactivity.
  *
- * A simple component for rendering text content within a paragraph or span element, depending on the 'interactive' prop.
- *
- * @param {IText} props - The properties for the Text component.
- * @param {React.ReactNode} props.children - The content to be displayed within the paragraph or span.
- * @param {boolean} [props.interactive=false] - A flag to determine whether the text is interactive or not. Defaults to 'false'.
+ * @param children - The content to be displayed within the Text component.
+ * @param interactive - A boolean flag indicating whether the text should be interactive.
+ * @param className - Additional CSS classes to be applied to the Text component.
  *
  * @example
  * Render text within a paragraph element (non-interactive):
@@ -21,7 +20,7 @@ import { getTextStyles } from "./Text.utils";
  * <Text interactive={true}>Interactive text.</Text>
  */
 
-const Text = ({ children, interactive = false }: IText): JSX.Element => {
+const Text = ({ children, interactive = false, className = "" }: IText): JSX.Element => {
   // Determine the element type (paragraph or span) based on the 'interactive' prop.
   const Element = interactive ? "span" : "p";
 
@@ -29,7 +28,7 @@ const Text = ({ children, interactive = false }: IText): JSX.Element => {
   const styles = getTextStyles(interactive);
 
   return (
-    <Element className={`${styles}`}>{children}</Element>
+    <Element className={`${styles} ${className}`}>{children}</Element>
   );
 };
 

@@ -1,4 +1,8 @@
+// TYPES
 import { ButtonVariantType } from "./Button.types";
+
+// CONSTANTS
+import { GRADIENT_BG } from "../../../constants/index";
 
 /**
  * getButtonStyles - Returns the CSS class name based on the specified variant.
@@ -13,10 +17,10 @@ export const getButtonStyles = (
 
   switch (variant) {
     case "primary":
-      return `primary-button-styles ${commonStyles} px-12 py-4 bg-gradient-to-r from-violet-500 via-fuchsia-500 to-fuchsia-950`;
+      return `primary-button-styles ${commonStyles} px-12 py-4 ${GRADIENT_BG}`;
 
     case "secondary":
-      return `secondary-button-styles ${commonStyles} bg-gradient-to-r from-violet-500  via-fuchsia-500 to-fuchsia-950`;
+      return `secondary-button-styles ${commonStyles} ${GRADIENT_BG}`;
 
     default:
       return `default-button-styles ${commonStyles}`;

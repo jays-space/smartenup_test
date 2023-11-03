@@ -1,160 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1699025351660" clover="3.2.0">
-  <project timestamp="1699025351660" name="All files">
-    <metrics statements="87" coveredstatements="87" conditionals="36" coveredconditionals="36" methods="31" coveredmethods="20" elements="154" coveredelements="143" complexity="0" loc="87" ncloc="87" packages="10" files="28" classes="28"/>
-    <package name="components.atoms">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
-      <file name="index.ts" path="C:\jays_space\other_projects\smartenup\src\components\atoms\index.ts">
-        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
-        <line num="1" count="5" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-      </file>
-    </package>
-    <package name="components.atoms.section">
-      <metrics statements="4" coveredstatements="4" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="2"/>
-      <file name="Section.atom.tsx" path="C:\jays_space\other_projects\smartenup\src\components\atoms\section\Section.atom.tsx">
-        <metrics statements="3" coveredstatements="3" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
-        <line num="13" count="2" type="cond" truecount="1" falsecount="0"/>
-        <line num="14" count="1" type="stmt"/>
-        <line num="21" count="2" type="stmt"/>
-      </file>
-      <file name="index.ts" path="C:\jays_space\other_projects\smartenup\src\components\atoms\section\index.ts">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="1" count="3" type="stmt"/>
-      </file>
-    </package>
-    <package name="components.atoms.typography">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
-      <file name="index.ts" path="C:\jays_space\other_projects\smartenup\src\components\atoms\typography\index.ts">
-        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="5" type="stmt"/>
-      </file>
-    </package>
-    <package name="components.atoms.typography.heading">
-      <metrics statements="22" coveredstatements="22" conditionals="15" coveredconditionals="15" methods="3" coveredmethods="3"/>
-      <file name="Heading.atom.tsx" path="C:\jays_space\other_projects\smartenup\src\components\atoms\typography\heading\Heading.atom.tsx">
-        <metrics statements="11" coveredstatements="11" conditionals="8" coveredconditionals="8" methods="1" coveredmethods="1"/>
-        <line num="3" count="2" type="stmt"/>
-        <line num="14" count="2" type="cond" truecount="1" falsecount="0"/>
-        <line num="16" count="7" type="cond" truecount="7" falsecount="0"/>
-        <line num="18" count="1" type="stmt"/>
-        <line num="22" count="1" type="stmt"/>
-        <line num="26" count="1" type="stmt"/>
-        <line num="30" count="1" type="stmt"/>
-        <line num="34" count="1" type="stmt"/>
-        <line num="38" count="1" type="stmt"/>
-        <line num="43" count="1" type="stmt"/>
-        <line num="47" count="2" type="stmt"/>
-      </file>
-      <file name="Heading.utils.tsx" path="C:\jays_space\other_projects\smartenup\src\components\atoms\typography\heading\Heading.utils.tsx">
-        <metrics statements="10" coveredstatements="10" conditionals="7" coveredconditionals="7" methods="1" coveredmethods="1"/>
-        <line num="10" count="2" type="stmt"/>
-        <line num="12" count="7" type="stmt"/>
-        <line num="14" count="7" type="cond" truecount="7" falsecount="0"/>
-        <line num="17" count="1" type="stmt"/>
-        <line num="20" count="1" type="stmt"/>
-        <line num="23" count="1" type="stmt"/>
-        <line num="26" count="1" type="stmt"/>
-        <line num="29" count="1" type="stmt"/>
-        <line num="32" count="1" type="stmt"/>
-        <line num="36" count="1" type="stmt"/>
-      </file>
-      <file name="index.ts" path="C:\jays_space\other_projects\smartenup\src\components\atoms\typography\heading\index.ts">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="1" count="9" type="stmt"/>
-      </file>
-    </package>
-    <package name="components.atoms.typography.text">
-      <metrics statements="12" coveredstatements="12" conditionals="6" coveredconditionals="6" methods="3" coveredmethods="3"/>
-      <file name="Text.atom.tsx" path="C:\jays_space\other_projects\smartenup\src\components\atoms\typography\text\Text.atom.tsx">
-        <metrics statements="6" coveredstatements="6" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
-        <line num="5" count="3" type="stmt"/>
-        <line num="23" count="3" type="cond" truecount="2" falsecount="0"/>
-        <line num="25" count="10" type="cond" truecount="2" falsecount="0"/>
-        <line num="28" count="10" type="stmt"/>
-        <line num="30" count="10" type="stmt"/>
-        <line num="36" count="3" type="stmt"/>
-      </file>
-      <file name="Text.utils.ts" path="C:\jays_space\other_projects\smartenup\src\components\atoms\typography\text\Text.utils.ts">
-        <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="7" count="3" type="stmt"/>
-        <line num="9" count="10" type="stmt"/>
-        <line num="11" count="10" type="cond" truecount="2" falsecount="0"/>
-        <line num="13" count="5" type="stmt"/>
-        <line num="16" count="5" type="stmt"/>
-      </file>
-      <file name="index.ts" path="C:\jays_space\other_projects\smartenup\src\components\atoms\typography\text\index.ts">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="1" count="13" type="stmt"/>
-      </file>
-    </package>
-    <package name="components.elements.button">
-      <metrics statements="14" coveredstatements="14" conditionals="7" coveredconditionals="7" methods="4" coveredmethods="3"/>
-      <file name="Button.element.tsx" path="C:\jays_space\other_projects\smartenup\src\components\elements\button\Button.element.tsx">
-        <metrics statements="6" coveredstatements="6" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="1"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="23" count="1" type="stmt"/>
-        <line num="29" count="4" type="stmt"/>
-        <line num="42" count="1" type="stmt"/>
-      </file>
-      <file name="Button.utils.ts" path="C:\jays_space\other_projects\smartenup\src\components\elements\button\Button.utils.ts">
-        <metrics statements="7" coveredstatements="7" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
-        <line num="16" count="4" type="stmt"/>
-        <line num="18" count="4" type="cond" truecount="3" falsecount="0"/>
-        <line num="20" count="1" type="stmt"/>
-        <line num="23" count="1" type="stmt"/>
-        <line num="26" count="2" type="stmt"/>
-      </file>
-      <file name="index.ts" path="C:\jays_space\other_projects\smartenup\src\components\elements\button\index.ts">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="1" count="5" type="stmt"/>
-      </file>
-    </package>
+<coverage generated="1699035300886" clover="3.2.0">
+  <project timestamp="1699035300886" name="All files">
+    <metrics statements="28" coveredstatements="28" conditionals="1" coveredconditionals="1" methods="12" coveredmethods="5" elements="41" coveredelements="34" complexity="0" loc="28" ncloc="28" packages="2" files="12" classes="12"/>
     <package name="components.elements.marquee">
-      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <metrics statements="12" coveredstatements="12" conditionals="1" coveredconditionals="1" methods="4" coveredmethods="4"/>
       <file name="Marquee.element.tsx" path="C:\jays_space\other_projects\smartenup\src\components\elements\marquee\Marquee.element.tsx">
-        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <metrics statements="4" coveredstatements="4" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="2" count="1" type="stmt"/>
+        <line num="11" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+      </file>
+      <file name="Marquee.utils.tsx" path="C:\jays_space\other_projects\smartenup\src\components\elements\marquee\Marquee.utils.tsx">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="4" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="8" count="4" type="stmt"/>
-        <line num="21" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="21" count="7" type="stmt"/>
+        <line num="23" count="28" type="stmt"/>
+        <line num="36" count="2" type="stmt"/>
       </file>
       <file name="index.ts" path="C:\jays_space\other_projects\smartenup\src\components\elements\marquee\index.ts">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="1" count="2" type="stmt"/>
-      </file>
-    </package>
-    <package name="components.elements.statistic">
-      <metrics statements="7" coveredstatements="7" conditionals="7" coveredconditionals="7" methods="2" coveredmethods="2"/>
-      <file name="Statistic.element.tsx" path="C:\jays_space\other_projects\smartenup\src\components\elements\statistic\Statistic.element.tsx">
-        <metrics statements="6" coveredstatements="6" conditionals="7" coveredconditionals="7" methods="1" coveredmethods="1"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="10" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="11" count="2" type="stmt"/>
-        <line num="14" count="2" type="stmt"/>
-        <line num="42" count="1" type="stmt"/>
-      </file>
-      <file name="index.ts" path="C:\jays_space\other_projects\smartenup\src\components\elements\statistic\index.ts">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="3" type="stmt"/>
-      </file>
-    </package>
-    <package name="constants">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="index.ts" path="C:\jays_space\other_projects\smartenup\src\constants\index.ts">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="1" count="6" type="stmt"/>
-      </file>
-      <file name="theme.ts" path="C:\jays_space\other_projects\smartenup\src\constants\theme.ts">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="2" type="stmt"/>
       </file>
     </package>
     <package name="copy">
@@ -186,7 +55,7 @@
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
-        <line num="6" count="3" type="stmt"/>
+        <line num="6" count="10" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
         <line num="8" count="1" type="stmt"/>
       </file>

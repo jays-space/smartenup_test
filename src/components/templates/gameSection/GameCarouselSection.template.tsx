@@ -1,5 +1,15 @@
+// COMPONENTS
+import { Heading, Section } from "@/components/atoms";
+
 const GameCarouselSection = () => {
-  return <section>GameCarouselSection</section>;
+  return (
+    <Section
+      title="Game Carousel Section"
+      className={`flex flex-col justify-center items-center`}
+    >
+      <Heading>Game Carousel Section</Heading>
+    </Section>
+  );
 };
 
 export default GameCarouselSection;

@@ -4,6 +4,9 @@ import { IButton } from "./Button.types";
 // COMPONENTS
 import { Text } from "../../atoms/typography/text";
 
+// CONSTANTS
+import { GRADIENT_BG } from "../../../constants";
+
 // UTILS
 import { getButtonStyles } from "./Button.utils";
 
@@ -27,7 +30,7 @@ const Button = ({
     <button onClick={onClick} className={`${getButtonStyles(variant)}`}>
       {variant === "secondary" ? (
         <span data-testid={`secondaryButtonContentBackground`} className={`text-content-background bg-background m-[1px] px-12 py-4 cursor-pointer`}>
-          <Text interactive>{label}</Text>
+          <Text interactive className={`${GRADIENT_BG} inline-block text-transparent bg-clip-text`}>{label}</Text>
         </span>
       ) : (
         <Text interactive>{label}</Text>

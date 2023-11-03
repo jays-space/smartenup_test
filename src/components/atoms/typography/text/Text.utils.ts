@@ -10,7 +10,7 @@ export const getTextStyles = (interactive: boolean) => {
 
   if (interactive) {
     // Return interactive text styles with common styles
-    return `text-interactive-styles ${commonStyles} font-heading uppercase font-extrabold leading-snug tracking-wide cursor-pointer`;
+    return `text-interactive-styles ${commonStyles} font-heading uppercase font-bold leading-snug tracking-wide cursor-pointer`;
   } else {
     // Return default text styles with common styles
     return `text-default-styles ${commonStyles} font-body leading-[34.64px] tracking-wide`;

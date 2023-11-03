@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1699002429666" clover="3.2.0">
-  <project timestamp="1699002429666" name="All files">
-    <metrics statements="64" coveredstatements="64" conditionals="36" coveredconditionals="36" methods="20" coveredmethods="16" elements="120" coveredelements="116" complexity="0" loc="64" ncloc="64" packages="8" files="17" classes="17"/>
+<coverage generated="1699025351660" clover="3.2.0">
+  <project timestamp="1699025351660" name="All files">
+    <metrics statements="87" coveredstatements="87" conditionals="36" coveredconditionals="36" methods="31" coveredmethods="20" elements="154" coveredelements="143" complexity="0" loc="87" ncloc="87" packages="10" files="28" classes="28"/>
     <package name="components.atoms">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
       <file name="index.ts" path="C:\jays_space\other_projects\smartenup\src\components\atoms\index.ts">
@@ -90,14 +90,15 @@
       </file>
     </package>
     <package name="components.elements.button">
-      <metrics statements="13" coveredstatements="13" conditionals="7" coveredconditionals="7" methods="4" coveredmethods="3"/>
+      <metrics statements="14" coveredstatements="14" conditionals="7" coveredconditionals="7" methods="4" coveredmethods="3"/>
       <file name="Button.element.tsx" path="C:\jays_space\other_projects\smartenup\src\components\elements\button\Button.element.tsx">
-        <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="1"/>
+        <metrics statements="6" coveredstatements="6" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="1"/>
         <line num="5" count="1" type="stmt"/>
         <line num="8" count="1" type="stmt"/>
-        <line num="20" count="1" type="stmt"/>
-        <line num="26" count="4" type="stmt"/>
-        <line num="39" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="29" count="4" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
       </file>
       <file name="Button.utils.ts" path="C:\jays_space\other_projects\smartenup\src\components\elements\button\Button.utils.ts">
         <metrics statements="7" coveredstatements="7" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
@@ -112,6 +113,21 @@
       <file name="index.ts" path="C:\jays_space\other_projects\smartenup\src\components\elements\button\index.ts">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="5" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.elements.marquee">
+      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <file name="Marquee.element.tsx" path="C:\jays_space\other_projects\smartenup\src\components\elements\marquee\Marquee.element.tsx">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+      </file>
+      <file name="index.ts" path="C:\jays_space\other_projects\smartenup\src\components\elements\marquee\index.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
       </file>
     </package>
     <package name="components.elements.statistic">
@@ -134,11 +150,57 @@
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="index.ts" path="C:\jays_space\other_projects\smartenup\src\constants\index.ts">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="1" count="5" type="stmt"/>
+        <line num="1" count="6" type="stmt"/>
       </file>
       <file name="theme.ts" path="C:\jays_space\other_projects\smartenup\src\constants\theme.ts">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="copy">
+      <metrics statements="16" coveredstatements="16" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="1"/>
+      <file name="bannerSection.copy.ts" path="C:\jays_space\other_projects\smartenup\src\copy\bannerSection.copy.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+      <file name="ctaSection.copy.ts" path="C:\jays_space\other_projects\smartenup\src\copy\ctaSection.copy.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+      <file name="filtersSection.copy.ts" path="C:\jays_space\other_projects\smartenup\src\copy\filtersSection.copy.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+      <file name="footer.copy.ts" path="C:\jays_space\other_projects\smartenup\src\copy\footer.copy.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+      <file name="gameSection.copy.ts" path="C:\jays_space\other_projects\smartenup\src\copy\gameSection.copy.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+      <file name="index.ts" path="C:\jays_space\other_projects\smartenup\src\copy\index.ts">
+        <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+      </file>
+      <file name="marquee.copy.ts" path="C:\jays_space\other_projects\smartenup\src\copy\marquee.copy.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+      <file name="nav.copy.ts" path="C:\jays_space\other_projects\smartenup\src\copy\nav.copy.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+      <file name="testimonialsSection.copy.ts" path="C:\jays_space\other_projects\smartenup\src\copy\testimonialsSection.copy.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
       </file>
     </package>
   </project>

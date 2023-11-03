@@ -2,7 +2,7 @@ import "@testing-library/jest-dom";
 import { render, screen } from "@testing-library/react";
 import { Statistic } from ".";
 
-describe("<Text />", () => {
+describe("<Statistic />", () => {
   const content = {
     value: 300,
     text: "test text",

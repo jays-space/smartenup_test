@@ -12,9 +12,10 @@ const BannerSection = () => {
       <div className="flex absolute right-0 top-0">
         <img
           className="mix-blend-color-dodge w-full h-full"
-          src="../../../../public/images/artboard11.png"
+          src="/images/artboard11.png"
         />
       </div>
+
       {/* blur */}
       <div className="w-[341px] h-[341px] left-[-107px] top-[85px] absolute bg-fuchsia-600 rounded-full blur-[200px]" />
 
@@ -22,9 +23,18 @@ const BannerSection = () => {
       <div className={`w-7/12 flex flex-col gap-y-8 z-20`}>
         <div className={`flex flex-col gap-y-2`}>
           <div>
-            <Heading variant="h1">{BANNER_SECTION_COPY.headline[0]}</Heading>
-            <Heading variant="h1">{BANNER_SECTION_COPY.headline[1]}</Heading>
-            <Heading variant="h1">{BANNER_SECTION_COPY.headline[2]}</Heading>
+            {BANNER_SECTION_COPY.headline.map((text, index) => {
+              return (
+                <Heading
+                  key={index}
+                  color={text.includes("explore")}
+                  variant="h1"
+                  className="inline-block"
+                >
+                  {text}
+                </Heading>
+              );
+            })}
           </div>
 
           <div className={`max-w-xl`}>

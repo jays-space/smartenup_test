@@ -1,5 +1,8 @@
 import { ReactNode } from "react";
 
+// COMPONENTS
+import { Star } from "@/components/atoms/star";
+
 // COPY
 import { MARQUEE_COPY } from "../../../copy";
 
@@ -20,13 +23,26 @@ export const generateMarqueeContent = (nofLoops: number): ReactNode[] => {
     // Map over the MARQUEE_COPY array to create span elements for each text item.
     content.push(
       MARQUEE_COPY.map((text, index) => {
-        return (
-          <span
-            key={index}
-            className="text-white text-3xl font-extrabold font-heading uppercase leading-[33.18px] tracking-wide min-w-fit"
-          >
-            {text}
-          </span>
+        return text.includes("-") ? (
+          <>
+            <Star />
+            <span
+              key={index}
+              className="text-white text-3xl font-bold font-heading uppercase leading-[33.18px] tracking-wide min-w-fit"
+            >
+              {text.split(/-/i)}
+            </span>
+          </>
+        ) : (
+          <>
+            <Star />
+            <span
+              key={index}
+              className="text-white text-3xl font-bold font-heading uppercase leading-[33.18px] tracking-wide min-w-fit"
+            >
+              {text}
+            </span>
+          </>
         );
       })
     );

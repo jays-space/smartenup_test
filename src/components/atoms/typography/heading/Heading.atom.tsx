@@ -22,23 +22,26 @@ const Heading = ({
   className = "",
   color = false,
 }: IHeading): JSX.Element => {
+  // TODO: Find more reusable solution for selecting a text from a string and coloring it
+
   const coloredTextStyles = `${
     color ? `${GRADIENT_BG} !inline-block !text-transparent bg-clip-text` : ""
   }`;
 
+  const splitChildren =
+    children && typeof children === "string" && children?.split(" ");
+
   // Determine the appropriate heading element based on the provided 'variant' prop.
   switch (variant) {
     case "h1": {
-      const splitChildren =
-        children && typeof children === "string"
-          ? children?.split(" ")
-          : children;
       return (
         <h1 className={`${getHeadingStyles(variant)} ${className}`}>
-          {color ? (
+          {color && splitChildren ? (
             <>
               {splitChildren[0]}
-              <span className={`${coloredTextStyles} ml-2`}>{splitChildren[1]}</span>
+              <span className={`${coloredTextStyles} ml-2`}>
+                {splitChildren[1]}
+              </span>
             </>
           ) : (
             children

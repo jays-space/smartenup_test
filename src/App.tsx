@@ -1,7 +1,5 @@
 import "./App.css";
 
-// COMPONENTS
-import { Marquee } from "@/components/elements";
 import {
   // Navbar,
   BannerSection,
@@ -18,7 +16,6 @@ function App() {
       {/* <Navbar /> */}
       <main className="relative overflow-x-hidden">
         <BannerSection />
-        <Marquee />
         <GameCarouselSection />
         <CTASection />
         <FiltersSection />

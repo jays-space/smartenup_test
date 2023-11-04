@@ -17,7 +17,7 @@ export const getHeadingStyles = (variant: HeadingVariantTypes | undefined) => {
       return `h1-styles ${commonStyles} text-6xl leading-[76.24px] tracking-[2.76px]`;
     case "h2":
       // Styles for h2 headings with common styles.
-      return `h2-styles ${commonStyles} `;
+      return `h2-styles ${commonStyles} text-5xl leading-[55.97px]`;
     case "h3":
       // Styles for h3 headings with common styles.
       return `h3-styles ${commonStyles} `;

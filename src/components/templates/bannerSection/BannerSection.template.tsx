@@ -1,6 +1,6 @@
 // COMPONENTS
 import { BlurSphere, Heading, Section, Text } from "@/components/atoms";
-import { DoubleButtons, Statistic } from "@/components/elements";
+import { DoubleButtons, Marquee, Statistic } from "@/components/elements";
 
 // COPY
 import { BANNER_SECTION_COPY } from "@/copy";
@@ -63,6 +63,8 @@ const BannerSection = () => {
           })}
         </div>
       </div>
+
+      <Marquee glass className={`-rotate-2 bottom-0 translate-y-14`}/>
     </Section>
   );
 };

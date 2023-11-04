@@ -2,9 +2,11 @@
 import { BlurSphere, Heading, Section, Text } from "@/components/atoms";
 import { Button, Marquee } from "@/components/elements";
 
+// CONSTANTS
+import { GRADIENT_BG } from "@/constants";
+
 // COPY
 import { CTA_SECTION_COPY } from "@/copy";
-import { GRADIENT_BG } from "@/constants";
 
 const CTASection = () => {
   return (

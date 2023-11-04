@@ -53,7 +53,16 @@ const Heading = ({
     case "h2": {
       return (
         <h2 className={`${getHeadingStyles(variant)} ${className}`}>
-          {children}
+          {color && splitChildren ? (
+            <>
+              {splitChildren[0]}
+              <span className={`${coloredTextStyles} ml-2`}>
+                {splitChildren[1]}
+              </span>
+            </>
+          ) : (
+            children
+          )}
         </h2>
       );
     }

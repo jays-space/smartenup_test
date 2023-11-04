@@ -2,10 +2,10 @@
 import { IButton } from "./Button.types";
 
 // COMPONENTS
-import { Text } from "../../atoms/typography/text";
+import { Text } from "../../../atoms/typography/text";
 
 // CONSTANTS
-import { GRADIENT_BG } from "../../../constants";
+import { GRADIENT_BG } from "../../../../constants";
 
 // UTILS
 import { getButtonStyles } from "./Button.utils";

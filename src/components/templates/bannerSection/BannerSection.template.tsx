@@ -1,6 +1,6 @@
 // COMPONENTS
-import { Heading, Section, Text } from "@/components/atoms";
-import { Button, Statistic } from "@/components/elements";
+import { BlurSphere, Heading, Section, Text } from "@/components/atoms";
+import { DoubleButtons, Statistic } from "@/components/elements";
 
 // COPY
 import { BANNER_SECTION_COPY } from "@/copy";
@@ -17,7 +17,7 @@ const BannerSection = () => {
       </div>
 
       {/* blur */}
-      <div className="w-[341px] h-[341px] left-[-107px] top-[85px] absolute bg-fuchsia-600 rounded-full blur-[200px]" />
+      <BlurSphere className="left-[-107px] top-[85px]" />
 
       {/* main content */}
       <div className={`w-7/12 flex flex-col gap-y-8 z-20`}>
@@ -27,7 +27,9 @@ const BannerSection = () => {
               return (
                 <Heading
                   key={index}
-                  color={text.includes("explore")}
+                  color={text.includes(
+                    BANNER_SECTION_COPY.headline[1].split(" ")[1]
+                  )}
                   variant="h1"
                   className="inline-block"
                 >
@@ -42,10 +44,11 @@ const BannerSection = () => {
           </div>
         </div>
 
-        <div className={`flex flex-row items-center gap-x-8`}>
-          <Button variant="primary" label="buy now" />
-          <Button variant="secondary" label="play now" />
-        </div>
+        {/* Buttons */}
+        <DoubleButtons
+          leftBtn={{ label: BANNER_SECTION_COPY.buttonLabels.primary }}
+          rightBtn={{ label: BANNER_SECTION_COPY.buttonLabels.secondary }}
+        />
 
         <div className="justify-start items-start gap-[31px] inline-flex">
           {BANNER_SECTION_COPY.statistics.map(({ text, value }, index) => {

@@ -2,7 +2,7 @@
 import { ButtonVariantType } from "./Button.types";
 
 // CONSTANTS
-import { GRADIENT_BG } from "../../../constants/index";
+import { GRADIENT_BG } from "../../../../constants/index";
 
 /**
  * getButtonStyles - Returns the CSS class name based on the specified variant.

@@ -17,4 +17,8 @@ export const BANNER_SECTION_COPY = {
       text: "happy customer", //? happy customers?
     },
   ],
+  buttonLabels: {
+    primary: "buy now",
+    secondary: "play now",
+  },
 };

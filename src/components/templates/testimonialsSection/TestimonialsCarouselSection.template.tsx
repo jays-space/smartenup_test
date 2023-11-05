@@ -7,7 +7,6 @@ import { TESTIMONIALS_SECTION_COPY } from "@/copy";
 import { ReactNode } from "react";
 
 const TestimonialsCarouselSection = () => {
-  // const [] = useState<ReactNode>()
   return (
     <Section
       title="Testimonials Carousel Section"

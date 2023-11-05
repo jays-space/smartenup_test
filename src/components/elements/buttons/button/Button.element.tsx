@@ -28,13 +28,34 @@ const Button = ({
 }: IButton): JSX.Element => {
   // Render the button element with the specified properties and CSS class
   return (
-    <button onClick={onClick} className={`${getButtonStyles(variant)} -skew-x-12`}>
+    <button
+      onClick={onClick}
+      className={`${getButtonStyles(variant)} -skew-x-12`}
+    >
       {variant === "secondary" ? (
-        <span data-testid={`secondaryButtonContentBackground`} className={`text-content-background bg-background m-[1px] px-12 py-4 cursor-pointer ${className}`}>
-          <Text interactive className={`${GRADIENT_BG} inline-block text-transparent bg-clip-text skew-x-12`}>{label}</Text>
+        <span
+          data-testid={`secondaryButtonContentBackground`}
+          className={`text-content-background bg-background m-[1px] px-12 py-4 cursor-pointer ${className}`}
+        >
+          {className.includes("text-white") ? (
+            <Text
+              className={`!skew-x-12 !font-normal uppercase leading-snug tracking-wide ${className}`}
+            >
+              {label}
+            </Text>
+          ) : (
+            <Text
+              interactive
+              className={`${GRADIENT_BG} inline-block text-transparent bg-clip-text skew-x-12`}
+            >
+              {label}
+            </Text>
+          )}
         </span>
       ) : (
-        <Text interactive className={`skew-x-12 ${className}`}>{label}</Text>
+        <Text interactive className={`skew-x-12 ${className}`}>
+          {label}
+        </Text>
       )}
     </button>
   );

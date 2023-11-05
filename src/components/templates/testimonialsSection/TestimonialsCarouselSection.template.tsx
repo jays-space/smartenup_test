@@ -1,5 +1,5 @@
 // COMPONENTS
-import { Card, Icon, Section, Text } from "@/components/atoms";
+import { BlurSphere, Card, Icon, Section, Text } from "@/components/atoms";
 import { Marquee } from "@/components/elements";
 
 // COPY
@@ -13,6 +13,8 @@ const TestimonialsCarouselSection = () => {
       title="Testimonials Carousel Section"
       className={`flex flex-col items-center`}
     >
+      <BlurSphere className={`-top-96 left-0`} />
+
       <Marquee />
 
       <div className={`mt-40 flex flex-row gap-x-8`}>

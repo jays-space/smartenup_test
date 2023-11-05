@@ -19,10 +19,10 @@ const CTASection = () => {
 
       <div
         data-testid={`card`}
-        className={`w-full h-[556px] flex flex-row bg-violet-400 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10 border-[2px] border-violet-500 border-opacity-30 rounded-[10px] relative`}
+        className={`w-full h-[480px] flex flex-row bg-violet-400 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10 border-[2px] border-violet-500 border-opacity-30 rounded-[10px] relative`}
       >
         {/* artboard */}
-        <div className="flex w-[725px] h-[639px] absolute -left-2 bottom-0 z-10">
+        <div className="flex w-[625px] h-[539px] absolute -left-2 bottom-0 z-10">
           <img
             className="mix-blend-color-dodge w-full h-full"
             src="/images/artboard12.png"
@@ -31,7 +31,7 @@ const CTASection = () => {
 
         <div className={`flex flex-row w-full`}>
           <div className={`w-6/12`} />
-          <div className={`flex-1 px-14 py-16 flex flex-col gap-y-3`}>
+          <div className={`flex-1 px-8 py-16 flex flex-col gap-y-3`}>
             <div className="flex flex-row flex-wrap gap-x-3">
               {CTA_SECTION_COPY.headline.map((text, index) => {
                 return (

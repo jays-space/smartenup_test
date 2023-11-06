@@ -9,7 +9,7 @@ import {
   GameCarouselSection,
   TestimonialsCarouselSection,
 } from "@/components/templates";
-
+// overflow-y-hidden max-h-screen lg:overflow-y-scroll lg:max-h-max
 function App() {
   return (
     <div className="relative overflow-x-hidden">

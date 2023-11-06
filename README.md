@@ -1,6 +1,6 @@
 # React + TypeScript + Vite
 
-# Smartup Assessment
+# Smartenup Assessment
 
 ## Install instructions
 

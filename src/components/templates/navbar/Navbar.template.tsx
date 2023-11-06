@@ -12,7 +12,7 @@ const Navbar = () => {
     >
       <img src="/images/logo.png" className="h-full" />
 
-      <div className={`w-8/12 flex flex-row justify-between items-center`}>
+      <div className={`w-7/12 flex flex-row justify-between items-center`}>
         <span className={`flex flex-row items-center gap-x-10`}>
           {NAV_LINKS.map(({ label }, index) => {
             return (

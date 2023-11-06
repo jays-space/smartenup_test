@@ -24,25 +24,19 @@ export const generateMarqueeContent = (nofLoops: number): ReactNode[] => {
     content.push(
       MARQUEE_COPY.map((text, index) => {
         return text.includes("-") ? (
-          <>
+          <span key={index}>
             <Star />
-            <span
-              key={index}
-              className="text-white text-3xl font-bold font-heading uppercase leading-[33.18px] tracking-wide min-w-fit"
-            >
+            <span className="text-white text-3xl font-bold font-heading uppercase leading-[33.18px] tracking-wide min-w-fit">
               {text.split(/-/i)}
             </span>
-          </>
+          </span>
         ) : (
-          <>
+          <span key={index}>
             <Star />
-            <span
-              key={index}
-              className="text-white text-3xl font-bold font-heading uppercase leading-[33.18px] tracking-wide min-w-fit"
-            >
+            <span className="text-white text-3xl font-bold font-heading uppercase leading-[33.18px] tracking-wide min-w-fit">
               {text}
             </span>
-          </>
+          </span>
         );
       })
     );

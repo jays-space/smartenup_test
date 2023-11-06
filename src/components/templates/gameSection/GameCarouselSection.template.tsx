@@ -14,6 +14,7 @@ const GameCarouselSection = () => {
   for (let i = 1; i <= 7; i++) {
     DecorationPiecesTop.push(
       <img
+        key={`decoration_topleft_${i}`}
         src="/images/frame/decoration_topleft.png"
         className={`w-5 h-[12px] -mx-[3px]`}
       />
@@ -23,6 +24,7 @@ const GameCarouselSection = () => {
   for (let i = 1; i <= 7; i++) {
     DecorationPiecesTop.push(
       <img
+        key={`decoration_topright_${i}`}
         src="/images/frame/decoration_topright.png"
         className={`w-5 h-[12px] -mx-[3px]`}
       />
@@ -32,6 +34,7 @@ const GameCarouselSection = () => {
   for (let i = 1; i <= 7; i++) {
     DecorationPiecesLeft.push(
       <img
+        key={`decoration_left_${i}`}
         src="/images/frame/decoration_left.png"
         className={`w-3 h-full -my-[4px]`}
       />
@@ -41,6 +44,7 @@ const GameCarouselSection = () => {
   for (let i = 1; i <= 7; i++) {
     DecorationPiecesRight.push(
       <img
+        key={`decoration_right_${i}`}
         src="/images/frame/decoration_right.png"
         className={`w-3 h-full -my-[4px]`}
       />

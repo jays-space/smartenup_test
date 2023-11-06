@@ -18,12 +18,13 @@ const TestimonialsCarouselSection = () => {
 
       <div className={`mt-40 flex flex-row gap-x-8`}>
         {TESTIMONIALS_SECTION_COPY.testimonials.map(
-          ({ comment, company, fullName, rating, verified, avatar }) => {
+          ({ comment, company, fullName, rating, verified, avatar }, index) => {
             const Stars: ReactNode[] = [];
             const nofStars = 5;
             for (let i = 0; i < nofStars; i++) {
               Stars.push(
                 <Icon
+                  key={i}
                   name="star"
                   size={28}
                   color={rating <= i ? undefined : "#DD00B8"}
@@ -32,7 +33,7 @@ const TestimonialsCarouselSection = () => {
             }
 
             return (
-              <Card className={`px-12 py-14 flex flex-col relative`}>
+              <Card key={`card_${index}`} className={`px-12 py-14 flex flex-col relative`}>
                 <span
                   className={`flex flex-row items-center gap-x-4 absolute right-8 -top-12`}
                 >

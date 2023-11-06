@@ -5,4 +5,5 @@ export interface IButton {
   variant?: ButtonVariantType;
   onClick?: () => void;
   className?: string;
+  buttonClassName?: string;
 }

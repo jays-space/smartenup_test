@@ -16,13 +16,13 @@ const FiltersSection = () => {
     >
       <div className={`flex-1 pt-16 flex flex-col items-center gap-y-3`}>
         {/* headline */}
-        <div className="flex flex-row items-center justify-center flex-wrap gap-x-3 w-9/12">
+        <div className="flex flex-row items-center justify-center flex-wrap gap-x-3 w-7/12 md:w-9/12">
           {FILTERS_SECTION_COPY.headline.map((text, index) => {
             return (
               <Heading
                 key={index}
                 variant="h1"
-                className={`text-center inline-block`}
+                className={`text-center inline-block !text-[34.29px]`}
               >
                 {text === FILTERS_SECTION_COPY.headline[1].split(" ")[0] ? (
                   <span
@@ -40,7 +40,7 @@ const FiltersSection = () => {
 
         {/* filter buttons */}
         <div
-          className={`mt-9 flex justify-center items-center gap-x-4 mb-[77px]`}
+          className={`mt-9 flex justify-center items-center gap-x-4 mb-[77px] translate-x-40 md:translate-x-0`}
         >
           {FILTERS_SECTION_COPY.buttons.map(({ label, variant }, index) => {
             return (
@@ -55,14 +55,24 @@ const FiltersSection = () => {
         </div>
 
         {/* games list */}
-        <div className={`grid grid-cols-3 gap-x-4 gap-y-6 z-10`}>
+        <div
+          className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-x-4 gap-y-6 z-10`}
+        >
           {FILTERS_SECTION_COPY.games.map(
             ({ game, gamerInfo, thumbnail }, index) => {
               return (
-                <Card key={index} className={`flex flex-col py-5 pb-2 px-4`}>
-                  <img src={thumbnail} className="w-full aspect-auto" />
+                <Card
+                  key={index}
+                  className={`flex !flex-col py-5 pb-2 lg:px-4`}
+                >
+                  <div className="w-full flex items-center justify-center">
+                    <img
+                      src={thumbnail}
+                      className="w-11/12 lg:w-full aspect-auto"
+                    />
+                  </div>
 
-                  <div className={`flex flex-col mt-[30px] mb-[26px]`}>
+                  <div className={`flex flex-col mt-[30px] mb-[26px] px-4`}>
                     {/* game name */}
                     <Text
                       className={`text-2xl capitalize leading-relaxed tracking-wide`}
@@ -93,7 +103,9 @@ const FiltersSection = () => {
                   </div>
 
                   {/* button */}
-                  <Button variant="primary" label="live demo" />
+                  <div className="w-full flex justify-center items-center px-4 mb-10">
+                    <Button variant="primary" label="live demo" buttonClassName="w-full"/>
+                  </div>
                 </Card>
               );
             }

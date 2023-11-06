@@ -24,13 +24,14 @@ const Button = ({
   label,
   variant = undefined,
   className = "",
+  buttonClassName = "",
   onClick = () => {},
 }: IButton): JSX.Element => {
   // Render the button element with the specified properties and CSS class
   return (
     <button
       onClick={onClick}
-      className={`${getButtonStyles(variant)} -skew-x-12`}
+      className={`${getButtonStyles(variant)} -skew-x-12 ${buttonClassName}`}
     >
       {variant === "secondary" ? (
         <span

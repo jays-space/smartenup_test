@@ -73,7 +73,7 @@ const GameCarouselSection = () => {
                   GAME_SECTION_COPY.headline[1].split(" ")[1]
                 )}
                 variant="h1"
-                className={`text-center`}
+                className={`text-center z-20`}
               >
                 {text}
               </Heading>
@@ -81,14 +81,14 @@ const GameCarouselSection = () => {
           })}
         </div>
 
-        <div className={`max-w-xl`}>
+        <div className={`max-w-xl z-20`}>
           <Text className={`text-center`}>{GAME_SECTION_COPY.blurb}</Text>
         </div>
       </div>
 
       {/* TODO: image carousel */}
-      <div className={`w-screen flex items-center mb-[75px] gap-x-10`}>
-        <img src="/images/game2.png" className={`w-3/12 h-64 rounded-xl`} />
+      <div className={`w-screen flex items-center mb-[75px]`}>
+        <img src="/images/game2.png" className={`hidden md:inline w-2/12 xl:w-3/12 -translate-x-1/2 min-h-48 max-h-96`} />
 
         <div className={`flex-1 aspect-video relative`}>
           {/* frame */}
@@ -192,7 +192,7 @@ const GameCarouselSection = () => {
           </div>
         </div>
 
-        <img src="/images/game3.png" className={`w-3/12 h-64 rounded-xl`} />
+        <img src="/images/game3.png" className={`hidden md:inline w-2/12 xl:w-3/12 translate-x-1/2 min-h-48 max-h-96`} />
       </div>
 
       <DoubleButtons

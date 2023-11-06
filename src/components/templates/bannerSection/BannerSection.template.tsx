@@ -52,7 +52,7 @@ const BannerSection = () => {
             />
 
             {/* artboard */}
-            <div className="flex md:hidden w-[200vw] h-[480px] -translate-x-96 relative bg-background">
+            <div className="flex md:hidden w-[200vw] min-h-[480px] -translate-x-96 relative bg-background">
               <img
                 className="mix-blend-color-dodge w-full h-full"
                 src="/images/artboard11.png"
@@ -68,7 +68,7 @@ const BannerSection = () => {
             />
           </div>
 
-          <div className="justify-start items-start gap-[31px] inline-flex px-6 md:px-12 xl:px-24 2xl:px-56">
+          <div className="justify-center md:justify-start items-start gap-[31px] inline-flex px-6 md:px-12 xl:px-24 2xl:px-56">
             {BANNER_SECTION_COPY.statistics.map(({ text, value }, index) => {
               return (
                 <Statistic

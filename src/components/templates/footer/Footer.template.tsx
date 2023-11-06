@@ -22,18 +22,18 @@ const Footer = () => {
 
   return (
     <footer
-      className={`bg-background flex flex-col justify-center items-center relative px-24 py-14`}
+    className={`bg-background flex flex-col md:justify-center lg:items-center relative px-6 md:px-12 xl:px-24 2xl:px-56 min-h-[76.5vh]`}
     >
       <Marquee glass className={`-top-12`} />
-      <div className="flex absolute -right-2 top-0">
-        <img src="/images/footer_artboard.png" className="mix-blend-color-dodge" />
+      <div className="absolute -right-2 top-0 min-w-[1900px] h-full overflow-hidden">
+        <img src="/images/footer_artboard.png" className="mix-blend-color-dodge w-full h-full" />
       </div>
 
       <div className={`flex flex-col z-10 translate-y-6`}>
         {/* main content */}
-        <div className={`flex flex-row gap-x-24`}>
+        <div className={`flex flex-col lg:flex-row gap-x-24`}>
           {/* logo section */}
-          <div className={`flex flex-col gap-y-8 w-4/12`}>
+          <div className={`flex flex-col gap-y-8 w-full lg:w-4/12`}>
             {/* logo */}
             <div>
               <img src="/images/logo_large.png" />
@@ -41,14 +41,14 @@ const Footer = () => {
 
             {/* blurb */}
             <Text
-              className={`!text-base !font-normal !leading-[29.62px] !tracking-wide`}
+              className={`!text-base !font-normal !leading-[29.62px] !tracking-wide w-8/12 lg:w-full mb-10 lg:mb-0`}
             >
               {FOOTER_COPY.blurb}
             </Text>
           </div>
 
           {/* nav section */}
-          <div className={`flex flex-row flex-1 gap-x-24`}>
+          <div className={`flex flex-row flex-1 gap-x-24 gap-y-16 flex-wrap`}>
             {FOOTER_LINKS.map(({ topic, links }, index) => {
               return (
                 <div key={`${topic}-${index}`} className={`flex flex-col`}>
@@ -77,7 +77,7 @@ const Footer = () => {
         </div>
 
         {/* partners */}
-        <div className={`flex flex-row items-center gap-x-12 mt-7`}>
+        <div className={`flex flex-row items-center gap-12 mt-20 lg:mt-10 flex-wrap`}>
           <div className="w-28">
             <img src="/images/twitch_logo.png" />
           </div>
@@ -100,7 +100,7 @@ const Footer = () => {
         </div>
 
         {/* social links and TCs */}
-        <div className={`mt-14 flex flex-row items-center gap-x-8`}>
+        <div className={`mt-14 flex flex-col md:flex-row items-center gap-8`}>
           {/* social links */}
           <div className={`flex flex-row gap-x-3`}>
             <IconButton
@@ -126,7 +126,7 @@ const Footer = () => {
           </div>
 
           {/* TCs */}
-          <Text className={`!text-sm !leading-normal !tracking-wide`}>
+          <Text className={`!text-sm !leading-normal !tracking-wide text-center md:text-left`}>
             &copy; Copyright {currentYear}, All Rights Reserved by board
           </Text>
         </div>

@@ -1,7 +1,7 @@
 import "./App.css";
 
 import {
-  // Navbar,
+  Navbar,
   BannerSection,
   CTASection,
   FiltersSection,
@@ -12,9 +12,9 @@ import {
 
 function App() {
   return (
-    <>
-      {/* <Navbar /> */}
-      <main className="relative overflow-x-hidden">
+    <div className="relative overflow-x-hidden">
+      <Navbar />
+      <main className="relative">
         <BannerSection />
         <GameCarouselSection />
         <CTASection />
@@ -22,7 +22,7 @@ function App() {
         <TestimonialsCarouselSection />
       </main>
       <Footer />
-    </>
+    </div>
   );
 }
 

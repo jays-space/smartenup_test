@@ -8,7 +8,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`sticky h-7 -mt-5 flex flex-row justify-between items-center z-50`}
+      className={`w-full px-24 mt-8 absolute h-7 flex flex-row justify-between items-center z-50`}
     >
       <img src="/images/logo.png" className="h-full" />
 

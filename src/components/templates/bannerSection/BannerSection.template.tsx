@@ -1,7 +1,6 @@
 // COMPONENTS
 import { BlurSphere, Heading, Section, Text } from "@/components/atoms";
 import { DoubleButtons, Marquee, Statistic } from "@/components/elements";
-import { Navbar } from "..";
 
 // COPY
 import { BANNER_SECTION_COPY } from "@/copy";
@@ -10,8 +9,6 @@ const BannerSection = () => {
   return (
     <>
       <Section title="Banner Section" className={`flex flex-col`}>
-        <Navbar />
-
         {/* artboard */}
         <div className="flex absolute right-0 top-0">
           <img

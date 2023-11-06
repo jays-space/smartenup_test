@@ -12,9 +12,9 @@ const FiltersSection = () => {
   return (
     <Section
       title="Filters Section"
-      className={`flex flex-col justify-center items-center`}
+      className={`flex flex-col justify-center items-center -mb-16`}
     >
-      <div className={`flex-1  py-16 flex flex-col items-center gap-y-3`}>
+      <div className={`flex-1 pt-16 flex flex-col items-center gap-y-3`}>
         {/* headline */}
         <div className="flex flex-row items-center justify-center flex-wrap gap-x-3 w-9/12">
           {FILTERS_SECTION_COPY.headline.map((text, index) => {
@@ -59,7 +59,7 @@ const FiltersSection = () => {
           {FILTERS_SECTION_COPY.games.map(
             ({ game, gamerInfo, thumbnail }, index) => {
               return (
-                <Card key={index} className={`flex flex-col py-5 pb-12 px-4`}>
+                <Card key={index} className={`flex flex-col py-5 pb-2 px-4`}>
                   <img src={thumbnail} className="w-full aspect-auto" />
 
                   <div className={`flex flex-col mt-[30px] mb-[26px]`}>

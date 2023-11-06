@@ -10,7 +10,7 @@ const TestimonialsCarouselSection = () => {
   return (
     <Section
       title="Testimonials Carousel Section"
-      className={`flex flex-col items-center`}
+      className={`flex flex-col items-center pb-40`}
     >
       <BlurSphere className={`-top-96 left-0`} />
 

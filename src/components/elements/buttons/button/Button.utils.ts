@@ -1,5 +1,5 @@
 // TYPES
-import { ButtonVariantType } from "./Button.types";
+import { ButtonVariantType } from "../buttons.types";
 
 // CONSTANTS
 import { GRADIENT_BG } from "../../../../constants/index";
@@ -17,7 +17,7 @@ export const getButtonStyles = (
 
   switch (variant) {
     case "primary":
-      return `primary-button-styles ${commonStyles} px-12 py-4 ${GRADIENT_BG}`;
+      return `primary-button-styles ${commonStyles} px-8 lg:px-12 py-4 lg:py-5 ${GRADIENT_BG}`;
 
     case "secondary":
       return `secondary-button-styles ${commonStyles} ${GRADIENT_BG}`;

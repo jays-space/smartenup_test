@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <header
-      className={`w-full px-24 mt-8 absolute h-7 flex flex-row justify-between items-center z-50`}
+      className={`w-full px-6 md:px-12 xl:px-24 2xl:px-56 mt-8 absolute h-7 flex flex-row justify-between items-center z-50`}
     >
       <img src="/images/logo.png" className="h-full" />
 
@@ -56,7 +56,7 @@ const Navbar = () => {
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className={`w-full flex justify-end px-24 py-10 -mb-20 z-50`}>
+        <div className={`w-full flex justify-end px-6 py-10 -mb-20 z-50`}>
           <button
             className={`w-6 aspect-square flex lg:hidden cursor-pointer`}
             onClick={toggleMenu}

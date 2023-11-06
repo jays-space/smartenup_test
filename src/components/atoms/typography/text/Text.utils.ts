@@ -6,7 +6,7 @@
 
 export const getTextStyles = (interactive: boolean) => {
   // Common text styles shared between interactive and non-interactive text
-  const commonStyles = ` text-body text-lg font-normal `;
+  const commonStyles = ` text-body text-base lg:text-lg font-normal `;
 
   if (interactive) {
     // Return interactive text styles with common styles

@@ -21,7 +21,7 @@ function App() {
         <FiltersSection />
         <TestimonialsCarouselSection />
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

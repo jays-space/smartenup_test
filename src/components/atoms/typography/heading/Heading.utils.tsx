@@ -14,7 +14,7 @@ export const getHeadingStyles = (variant: HeadingVariantTypes | undefined) => {
   switch (variant) {
     case "h1":
       // Styles for h1 headings with specific font size, weight, line height, and tracking.
-      return `h1-styles ${commonStyles} text-6xl leading-[76.24px] tracking-[2.76px]`;
+      return `h1-styles ${commonStyles} text-[40.29px] lg:text-6xl leading-[44.56px] lg:leading-[76.24px] tracking-widest lg:tracking-[2.76px]`;
     case "h2":
       // Styles for h2 headings with common styles.
       return `h2-styles ${commonStyles} text-5xl leading-[55.97px]`;

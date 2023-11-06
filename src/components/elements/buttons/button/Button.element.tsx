@@ -35,25 +35,25 @@ const Button = ({
       {variant === "secondary" ? (
         <span
           data-testid={`secondaryButtonContentBackground`}
-          className={`text-content-background bg-background m-[1px] px-12 py-4 cursor-pointer ${className}`}
+          className={`text-content-background bg-background m-[1px] px-10 py-3 lg:px-12 lg:py-4 cursor-pointer ${className}`}
         >
           {className.includes("text-white") ? (
             <Text
-              className={`!skew-x-12 !font-normal uppercase leading-snug tracking-wide ${className}`}
+              className={`!skew-x-12 !font-normal uppercase leading-snug tracking-wide !text-xs min-w-[4rem] ${className}`}
             >
               {label}
             </Text>
           ) : (
             <Text
               interactive
-              className={`${GRADIENT_BG} inline-block text-transparent bg-clip-text skew-x-12`}
+              className={`${GRADIENT_BG} inline-block text-transparent bg-clip-text skew-x-12 !text-xs min-w-[4rem]`}
             >
               {label}
             </Text>
           )}
         </span>
       ) : (
-        <Text interactive className={`skew-x-12 ${className}`}>
+        <Text interactive className={`skew-x-12 !text-xs min-w-[4rem] ${className}`}>
           {label}
         </Text>
       )}

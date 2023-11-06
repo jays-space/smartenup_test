@@ -20,7 +20,7 @@ const Marquee = ({
   return (
     <div
       data-testid="Marquee"
-      className={`absolute -left-2 z-20 flex flex-row gap-14 min-w-[150vw] py-6 ${
+      className={`absolute -left-2 z-20 flex flex-row gap-x-6 min-w-max py-4 lg:py-6 ${
         glass
           ? "bg-violet-400 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10 border-y-[2px] border-violet-500 border-opacity-30"
           : ""

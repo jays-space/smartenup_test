@@ -15,7 +15,7 @@ const Statistic = ({ text, value, color = false }: IStatistic) => {
     <div className="flex flex-col items-center gap-[5px]">
       <div className={`flex items-center gap-x-1`}>
         <Text
-          className={`!text-3xl !font-extrabold font-heading uppercase leading-[33.18px] tracking-wide ${
+          className={`!text-[21.28px] lg:!text-3xl !font-extrabold font-heading uppercase leading-[33.18px] tracking-wide ${
             color ? "colored-value-styles" : "default-value-styles"
           } ${coloredTextStyles}`}
         >{`${value}`}</Text>
@@ -31,7 +31,7 @@ const Statistic = ({ text, value, color = false }: IStatistic) => {
       </div>
 
       <Text
-        className={`text-base font-extralight capitalize leading-[34.64px] tracking-wide`}
+        className={`text-xs lg:text-base font-extralight capitalize leading-[34.64px] tracking-wide`}
       >
         {text}
       </Text>

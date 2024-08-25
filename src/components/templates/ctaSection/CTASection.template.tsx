@@ -9,10 +9,11 @@ import { GRADIENT_BG } from "@/constants";
 import { CTA_SECTION_COPY } from "@/copy";
 
 /**
-* @api public
+* #region knowledgeHub
 *
 * Test note
 *
+* #endregion knowledgeHub
 */
 
 const CTASection = () => {
@@ -35,7 +36,15 @@ const CTASection = () => {
             src="/images/artboard12.png"
           />
         </div>
-
+        {
+          /**
+* #region knowledgeHub
+*
+* Test note
+*
+* #endregion knowledgeHub
+*/
+        }
         <div className={`flex flex-col lg:flex-row w-full`}>
           <div className={`w-6/12`} />
           <div className={`flex-1 px-8 py-8 xl:py-16 flex flex-col gap-y-3`}>

@@ -12,6 +12,11 @@ import {
 function App() {
   return (
     <div className="relative overflow-x-hidden">
+      /**
+      * #region KnowledgeHub
+      * this is a note for knowledge sharing
+      * #endregion KnowledgeHub
+      */
       <Navbar />
       <main className="relative">
         <BannerSection />

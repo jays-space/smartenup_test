@@ -8,6 +8,13 @@ import { GRADIENT_BG } from "@/constants";
 // COPY
 import { CTA_SECTION_COPY } from "@/copy";
 
+/**
+* @api public
+*
+* Test note
+*
+*/
+
 const CTASection = () => {
   return (
     <Section

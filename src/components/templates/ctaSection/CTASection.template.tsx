@@ -9,12 +9,36 @@ import { GRADIENT_BG } from "@/constants";
 import { CTA_SECTION_COPY } from "@/copy";
 
 /**
-* #region knowledgeHub
+* #region KnowledgeHub
 *
 * Test note
 *
-* #endregion knowledgeHub
+* #endregion KnowledgeHub
 */
+
+/**
+      * #region KnowledgeHub
+      * # this is a note for knowledge sharing
+      * 
+      * --
+      * ## Heading 2
+      * ### Heading 3
+      * #### Heading 4
+      * ##### Heading 5
+      * ###### Heading 6
+      * --
+      *
+      * * point
+      * - point
+      * 1. point
+      *
+      * ---
+      *
+      * |column| column |
+      * --
+      * |1|2|
+      * #endregion KnowledgeHub
+      */
 
 const CTASection = () => {
   return (
@@ -38,12 +62,28 @@ const CTASection = () => {
         </div>
         {
           /**
-* #region knowledgeHub
-*
-* Test note
-*
-* #endregion knowledgeHub
-*/
+      * #region KnowledgeHub
+      * # this is a note for knowledge sharing
+      * 
+      * --
+      * ## Heading 2
+      * ### Heading 3
+      * #### Heading 4
+      * ##### Heading 5
+      * ###### Heading 6
+      * --
+      *
+      * * point
+      * - point
+      * 1. point
+      *
+      * ---
+      *
+      * |column| column |
+      * --
+      * |1|2|
+      * #endregion KnowledgeHub
+      */
         }
         <div className={`flex flex-col lg:flex-row w-full`}>
           <div className={`w-6/12`} />

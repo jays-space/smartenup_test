@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="relative overflow-x-hidden">
       /**
-      * #region KnowledgeHub
+      * @api public
       * # this is a note for knowledge sharing
       * 
       * --
@@ -33,7 +33,6 @@ function App() {
       * |column| column |
       * --
       * |1|2|
-      * #endregion KnowledgeHub
       */
       <Navbar />
       <main className="relative">

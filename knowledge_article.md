@@ -1,18 +1,18 @@
-#Mastering Jest Testing for Lightning Web Components
+# Mastering Jest Testing for Lightning Web Components
 
 In the dynamic realm of web development, where Lightning Web Components (LWC) play a pivotal role in crafting robust user interfaces on the Salesforce platform, ensuring the reliability and functionality of your code is paramount. This is where testing comes into play.
 
 In this comprehensive blog series, we unveil the power of Jest in testing Lightning Web Components, offering clear guidance and practical examples to streamline your testing workflow.
 
-##Introduction to Jest Testing for Lightning Web Components
+## Introduction to Jest Testing for Lightning Web Components
 
 In this introductory blog, we'll lay the groundwork for our exploration of Jest testing for Lightning Web Components. We'll start by providing an overview of Jest, ensuring everyone is on the same page before we delve into the specifics. Then, we'll guide you through the process of setting up Jest for testing Lightning Web Components, ensuring you have the necessary tools and configurations in place.
 
-##Understanding Jest: Your Testing Companion
+## Understanding Jest: Your Testing Companion
 
 In this introductory blog, we embark on a journey to demystify Jest, the delightful JavaScript testing framework tailored for Lightning Web Components. Before we dive into the specifics, let's ensure everyone is on the same page by providing an overview of Jest and its relevance to LWC development.
 
-###Why Testing Matters
+### Why Testing Matters
 
 Before delving into the specifics of Jest, it's crucial to underscore the significance of testing in the software development lifecycle. Testing isn't merely a box-ticking exercise; it's a fundamental aspect of crafting high-quality, dependable software. By systematically verifying the behaviour of our code, we can identify and rectify potential issues early in the development cycle, saving time and resources while fostering confidence in our applications.
 
@@ -26,21 +26,21 @@ Before delving into the specifics of Jest, it's crucial to underscore the signif
 
 - Improved User Experience: Testing ensures applications function as intended, enhancing user satisfaction and trust in the product.
 
-##Demystifying Jest for LWC Development
+## Demystifying Jest for LWC Development
 
 Jest is a powerful testing framework primarily designed for JavaScript applications. It offers a rich set of features specifically tailored for writing and executing tests efficiently. Originally developed by Facebook, Jest has gained widespread adoption in the JavaScript community due to its simplicity, speed, and robustness.
 
-###What is Jest Used For in LWC Development?
+### What is Jest Used For in LWC Development?
 
 In the context of Salesforce Lightning Web Components (LWC), Jest serves as the go-to tool for writing unit tests. LWC developers leverage Jest to ensure the quality and reliability of their components by testing various aspects of their functionality. Unlike browser-based testing frameworks, Jest excels at running tests quickly without the need for a browser environment. This makes it particularly suitable for Lightning Web Components, where fast feedback during development is crucial.
 
-##Writing Your First Jest Test: A Step-by-Step Guide
+## Writing Your First Jest Test: A Step-by-Step Guide
 
 Now that we have laid some groundwork, let's dive into writing your first Jest test for a Lightning Web Component. It's worth mentioning that there's already excellent documentation available on installing, configuring, and running Jest tests in LWC. Salesforce's official documentation provides comprehensive guides on these topics:
 
-###Installation and Configuration
+### Installation and Configuration
 
-###Running Jest Tests
+### Running Jest Tests
 
 Additionally, if you want to delve deeper into Jest itself, the official Jest documentation is a goldmine of information: Jest Documentation.
 
@@ -100,27 +100,27 @@ describe('c-hello-world', () => {
 
 In this code:
 
-####Importing Dependencies
+#### Importing Dependencies
 
 We import essential functions and components, including createElement and the HelloWorld component.
 
-####Grouping Tests
+#### Grouping Tests
 
 Utilizing Jest's describe function, we organize tests into a suite named 'c-hello-world'.
 
-####Clean-up Between Tests
+#### Clean-up Between Tests
 
 The afterEach function ensures DOM cleanliness after each test, removing elements from the document body.
 
-####Defining Test Cases
+#### Defining Test Cases
 
 Each test case is defined using the it function, containing a description and test logic.
 
-####Creating Component Instances
+#### Creating Component Instances
 
 Instances of the HelloWorld component are created with createElement and appended to the document body.
 
-####Querying and Assertions
+#### Querying and Assertions
 
 Elements within the component's shadow DOM are queried using querySelector, and assertions are made using Jest's expect function.
 
@@ -130,7 +130,7 @@ We focused on two key aspects of testing: verifying that the component renders t
 
 In the next section, we'll dive a little deeper into testing by exploring how to handle DOM manipulations and events in our Lightning Web Components using Jest. We'll learn how to simulate user interactions, trigger events, and assert the resulting changes in the component's state or appearance. 
 
-###Testing DOM Manipulations and Events
+### Testing DOM Manipulations and Events
 
 Let's start by creating an LWC that we can use as an example for testing DOM manipulations and event handling. We'll create a simple counter component that increments a value when a button is clicked. Here's the HTML code for the component:
 
@@ -240,7 +240,7 @@ describe("c-counter-component", () => {
 
 Let's break down the testing implementation step by step:
 
-####Rendering the Component:
+#### Rendering the Component:
 
 In this test case we verify that the component renders correctly and displays the initial counter value.
 
@@ -252,7 +252,7 @@ Next, we query the shadow DOM of the component to find the p element, which disp
 
 Finally, we assert that the text content of the p element is "Counter Value: 0".
 
-####Incrementing the Counter on Button Click:
+#### Incrementing the Counter on Button Click:
 
 In this test case, we simulate a button click event to verify that the counter increments correctly.
 
@@ -266,7 +266,7 @@ Here, an async function is used to ensure that any asynchronous operations trigg
 
 Finally, we assert that the text content of the p element is "Counter Value: 1", indicating that the counter has incremented successfully.
 
-####Applying Styles Correctly:
+#### Applying Styles Correctly:
 
 This test case verifies that the component applies styles correctly to its elements.
 
@@ -284,7 +284,7 @@ These tests cover basic functionality, DOM manipulation, and style assertions fo
 
 
 
-##Conclusion and Next Steps:
+## Conclusion and Next Steps:
 
 In this blog post, we've explored the fundamentals of testing Lightning Web Components using Jest, a versatile JavaScript testing framework. By understanding the importance of testing in software development and leveraging Jest's capabilities, developers can ensure the reliability and functionality of their LWCs.
 

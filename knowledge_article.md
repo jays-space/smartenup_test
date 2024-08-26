@@ -290,7 +290,7 @@ In this blog post, we've explored the fundamentals of testing Lightning Web Comp
 
 To further enhance your testing skills and explore advanced topics, consider the following next steps:
 
-- Advanced Testing Techniques: Dive deeper into Jest's features and explore advanced testing techniques such as mocking, snapshot testing, and test optimization. We’ll explore these topics in further blogs.
+- Advanced Testing Techniques: Dive deeper into Jest's features and explore advanced testing techniques such as mocking, snapshot testing, and test optimization. We will explore these topics in further blogs.
 
 - Integration Testing: Learn how to perform integration testing for LWCs by simulating interactions with other components, services, or APIs.
 

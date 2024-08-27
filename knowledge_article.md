@@ -48,22 +48,25 @@ With that said, let's move on to writing our first Jest test. We'll cover basic 
 
 First, create a new LWC component named HelloWorld. This simple component displays a greeting message.
 
+```bash
 // helloWorld.html
 <template>
   <h1>Hello, World!</h1>
 </template>
+```
 
-
-
+```bash
 // helloWorld.js
 import { LightningElement } from 'lwc';
 
 export default class HelloWorld extends LightningElement {
     greeting = 'Hello, World!';
 }
+```
 
 Next, create a Jest test file for this component. Create a new file named "HelloWorld.test.js":
 
+```bash
 // Import the `createElement` function from the LWC library to create an instance of our component.
 import { createElement } from 'lwc';
 
@@ -97,6 +100,7 @@ describe('c-hello-world', () => {
         expect(pElement.textContent).toBe('Hello, World!');
     });
 });
+```
 
 In this code:
 
@@ -134,6 +138,7 @@ In the next section, we'll dive a little deeper into testing by exploring how to
 
 Let's start by creating an LWC that we can use as an example for testing DOM manipulations and event handling. We'll create a simple counter component that increments a value when a button is clicked. Here's the HTML code for the component:
 
+```bash
 <!-- counterComponent.html -->
 <template>
     <div class="container">
@@ -141,9 +146,11 @@ Let's start by creating an LWC that we can use as an example for testing DOM man
         <button onclick={incrementCounter}>Increment</button>
     </div>
 </template>
+```
 
 The javascript is as follows: 
 
+```bash
 // counterComponent.js
 import { LightningElement, track } from 'lwc';
 
@@ -154,9 +161,11 @@ export default class CounterComponent extends LightningElement {
         this.counter++;
     }
 }
+```
 
 And finally, the CSS code
 
+```bash
 /* counterComponent.css */
 .container {
     display: flex;
@@ -171,9 +180,11 @@ button {
     font-weight: 600;
     font-size: 1.5rem;
 }
+```
 
 Now, let's write Jest tests for this component. First, we'll create a test file for the component, and then we'll write tests to ensure that the component is rendered correctly, the functionality works as expected, and the styles are declared correctly.
 
+```bash
 // counterComponent.test.js
 import { createElement } from "lwc";
 import CounterComponent from "c/counterComponent";
@@ -236,7 +247,7 @@ describe("c-counter-component", () => {
     // Add more style assertions as needed
   });
 });
-
+```
 
 Let's break down the testing implementation step by step:
 
@@ -281,7 +292,6 @@ For the button element, we assert that the background-color property is "oranger
 Additional style assertions can be added as needed to ensure the component's styling meets the design requirements.
 
 These tests cover basic functionality, DOM manipulation, and style assertions for the CounterComponent. You can expand upon these tests or define more specific tests based on your component's requirements.
-
 
 
 ## Conclusion and Next Steps:

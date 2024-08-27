@@ -9,7 +9,7 @@ import { GRADIENT_BG } from "@/constants";
 import { CTA_SECTION_COPY } from "@/copy";
 
 /**
-* #region KnowledgeHub
+* @public
 *
 * Test note
 *
@@ -17,7 +17,7 @@ import { CTA_SECTION_COPY } from "@/copy";
 */
 
 /**
-      * #region KnowledgeHub
+      * @public
       * # this is a note for knowledge sharing
       * 
       * --
@@ -37,7 +37,6 @@ import { CTA_SECTION_COPY } from "@/copy";
       * |column| column |
       * --
       * |1|2|
-      * #endregion KnowledgeHub
       */
 
 const CTASection = () => {
@@ -62,7 +61,7 @@ const CTASection = () => {
         </div>
         {
           /**
-      * #region KnowledgeHub
+      * @public
       * # this is a note for knowledge sharing
       * 
       * --
@@ -82,7 +81,6 @@ const CTASection = () => {
       * |column| column |
       * --
       * |1|2|
-      * #endregion KnowledgeHub
       */
         }
         <div className={`flex flex-col lg:flex-row w-full`}>
